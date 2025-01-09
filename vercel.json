@@ -2,22 +2,46 @@
     "version": 2,
     "builds": [
       {
-        "src": "index.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "go.html",
+        "src": "public/**/*",
         "use": "@vercel/static"
       }
     ],
     "routes": [
       {
-        "src": "/",
+        "src": "/index.html",
         "dest": "/public/index.html"
       },
       {
-        "src": "/go",
+        "src": "/a.html",
+        "dest": "/public/a.html"
+      },
+      {
+        "src": "/ads.txt",
+        "dest": "/public/ads.txt"
+      },
+      {
+        "src": "/error.html",
+        "dest": "/public/error.html"
+      },
+      {
+        "src": "/g.html",
+        "dest": "/public/g.html"
+      },
+      {
+        "src": "/go.html",
         "dest": "/public/go.html"
+      },
+      {
+        "src": "/s.html",
+        "dest": "/public/s.html"
+      },
+      {
+        "src": "/assets/(.*)",
+        "dest": "/public/assets/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/public/$1"
       }
     ]
   }
