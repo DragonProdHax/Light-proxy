@@ -12,7 +12,7 @@
         "dest": "/public/index.html"
       },
       {
-        "src": "/a.html",
+        "src": "/a",
         "dest": "/public/a.html"
       },
       {
@@ -24,15 +24,15 @@
         "dest": "/public/error.html"
       },
       {
-        "src": "/g.html",
+        "src": "/g",
         "dest": "/public/g.html"
       },
       {
-        "src": "/go.html",
+        "src": "/go",
         "dest": "/public/go.html"
       },
       {
-        "src": "/s.html",
+        "src": "/s",
         "dest": "/public/s.html"
       },
       {
