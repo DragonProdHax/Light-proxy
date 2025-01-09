@@ -2,18 +2,22 @@
     "version": 2,
     "builds": [
       {
-        "src": "public/**/*",
+        "src": "index.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "go.html",
         "use": "@vercel/static"
       }
     ],
     "routes": [
       {
         "src": "/",
-        "dest": "/index.html"
+        "dest": "/public/index.html"
       },
       {
         "src": "/go",
-        "dest": "/go.html"
+        "dest": "/public/go.html"
       }
     ]
   }
